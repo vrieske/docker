@@ -14,7 +14,12 @@ docker images
 
 docker rmi image_name
 
-
+#### 4 运行镜像到容器     
+以后台模式启动一个容器,名字叫dockerTest      
+将容器的 8080 端口映射到主机的 9999 端口      
+镜像的名字叫 kechans/dockertest:v0.1     
+docker run -d -p 9999:8080 --name dockerTest  kechans/dockertest:v0.1 
+在主机可以使用 curl 127.0.0.1:9999/hi 
 
 ### 容器命令
 
