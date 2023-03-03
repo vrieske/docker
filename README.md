@@ -1,9 +1,8 @@
-# docker
-学习docker容器的项目
-### 编译
-运行build.sh编译二进制文件
-### 运行
-docker images 找到镜像对应的容器id    
-docker run -it -p 8080:8080 container_id  
-### 进入容器
-docker exec -it container_id /bin/bash
+1 运行build.sh
+2 docker images 查看镜像
+3 启动容器
+容器的8080端口映射到主机的9999端口上
+docker run -d -p 9999:8080 --name containerName images:version
+
+4 curl主机接口是否ok
+curl 127.0.0.1:9999/hi
