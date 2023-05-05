@@ -51,3 +51,5 @@ docker run -t -i container_id
 #### 7 删除容器(先stop容器才能执行删除)
 
 docker rm container_id 
+#### 8 查看容器日志        
+docker logs container_id -f 
