@@ -41,7 +41,7 @@ docker stop container_id
 
 #### 5 进入容器中
 
-docker exec -it container_id /bin/bash 
+docker exec -it container_id /bin/bash    或者    docker exec -it container_id sh    
 docker attach container_id 
 
 #### 6 运行容器中的镜像（第一次启动使用这个命令,主动stop后要用restart命令启动）
