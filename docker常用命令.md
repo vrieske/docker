@@ -53,3 +53,7 @@ docker run -t -i container_id
 docker rm container_id 
 #### 8 查看容器日志        
 docker logs container_id -f 
+#### 9 docker启动失败，查看失败日志   
+先查看容器id是多少 docker ps | grep container 找到id     
+然后运行 docker inspect --format '{{.LogPath}}' container_id    
+在 cat 出来的日志文件
